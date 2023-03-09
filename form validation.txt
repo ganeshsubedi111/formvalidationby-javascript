@@ -25,12 +25,12 @@
   <label for="female">Female</label><br><br>
   
   <label for="hobbies">Hobbies:</label><br>
-  <input type="checkbox" id="reading" name="hobbies" value="reading">
-  <label for="reading">Reading</label><br>
-  <input type="checkbox" id="music" name="hobbies" value="music">
-  <label for="music">Music</label><br>
-  <input type="checkbox" id="sports" name="hobbies" value="sports">
-  <label for="sports">Sports</label><br><br>
+  <input type="checkbox" id="writing" name="hobbies" value="writing">
+  <label for="reading">Writing</label><br>
+  <input type="checkbox" id="singing" name="hobbies" value="singing">
+  <label for="music">Singing</label><br>
+  <input type="checkbox" id="watching movies" name="hobbies" value="watching movies">
+  <label for="sports">Watching movies</label><br><br>
   
   <input type="submit" value="Submit" onclick="validateForm">
 </form>
