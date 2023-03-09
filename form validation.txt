@@ -1,0 +1,87 @@
+<!DOCType html>
+<html>
+<head>
+<title> form validation using javascript</title>
+<body>
+<fieldset>
+<legend> Please fill this form :</legend>
+<form id="myForm">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone"><br><br>
+  
+  <label>Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+  
+  <label for="hobbies">Hobbies:</label><br>
+  <input type="checkbox" id="reading" name="hobbies" value="reading">
+  <label for="reading">Reading</label><br>
+  <input type="checkbox" id="music" name="hobbies" value="music">
+  <label for="music">Music</label><br>
+  <input type="checkbox" id="sports" name="hobbies" value="sports">
+  <label for="sports">Sports</label><br><br>
+  
+  <input type="submit" value="Submit" onclick="validateForm">
+</form>
+</fieldset>
+
+//javascript code for form validation
+function validateForm() {
+  var username = document.forms["myForm"]["username"].value;
+  var password = document.forms["myForm"]["password"].value;
+  var email = document.forms["myForm"]["email"].value;
+  var phone = document.forms["myForm"]["phone"].value;
+  var gender = document.forms["myForm"]["gender"].value;
+  var hobbies = document.forms["myForm"]["hobbies"];
+  
+  if (username == "") {
+    alert("Username must be filled out");
+    return false;
+  }
+  
+  if (password == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+  
+  if (email == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  
+  if (phone == "") {
+    alert("Phone number must be filled out");
+    return false;
+  }
+  
+  if (gender == "") {
+    alert("Gender must be selected");
+    return false;
+  }
+  
+  var hobbiesSelected = false;
+  for (var i = 0; i < hobbies.length; i++) {
+    if (hobbies[i].checked) {
+      hobbiesSelected = true;
+      break;
+    }
+  }
+  
+  if (!hobbiesSelected) {
+    alert("At least one hobby must be selected");
+    return false;
+  }
+  
+  return true;
+}
