@@ -33,7 +33,7 @@
   <input type="checkbox" id="watching movies" name="hobbies" value="watching movies">
   <label for="sports">Watching movies</label><br><br>
   
-  <input type="submit" value="Submit" onclick="validateForm">
+  <input type="submit" value="Submit" onclick="validateForm()">
 </form>
 </fieldset>
 <script>
