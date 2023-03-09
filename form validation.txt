@@ -36,7 +36,7 @@
   <input type="submit" value="Submit" onclick="validateForm">
 </form>
 </fieldset>
-
+<script>
 //javascript code for form validation
 function validateForm() {
   var username = document.forms["myForm"]["username"].value;
@@ -77,8 +77,7 @@ function validateForm() {
       hobbiesSelected = true;
       break;
     }
-    </body>
-    </html>
+   
   }
   
   if (!hobbiesSelected) {
@@ -88,3 +87,6 @@ function validateForm() {
   
   return true;
 }
+ </script>
+    </body>
+    </html>
