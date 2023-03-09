@@ -2,6 +2,7 @@
 <html>
 <head>
 <title> form validation using javascript</title>
+</head>
 <body>
 <fieldset>
 <legend> Please fill this form :</legend>
@@ -76,6 +77,8 @@ function validateForm() {
       hobbiesSelected = true;
       break;
     }
+    </body>
+    </html>
   }
   
   if (!hobbiesSelected) {
